@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.customers-say {
+  position: relative;
+  width: 100%;
+  /* padding: 20px; */
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  /* margin-left: -30px; */
+  margin-right: -30px;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+/* .slick-prev,
+.slick-next {
+  font-size: 24px;
+  color: #000;
+} */
+
+.slick-prev,
+.slick-next {
+  display: none; /* Hide default arrows */
+}
+
+/* CustomArrows.css */
+.custom-arrow {
+  padding: 15px; /* Increase padding for larger size */
+  font-size: 24px; /* Larger font size for arrows */
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 70px; /* Fixed width */
+  height: 70px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-arrow.slick-prev {
+  left: 10px; /* Adjust as needed */
+}
+
+.custom-arrow.slick-next {
+  right: 10px; /* Adjust as needed */
+}
+
+.slick-list {
+  box-sizing: border-box;
+}

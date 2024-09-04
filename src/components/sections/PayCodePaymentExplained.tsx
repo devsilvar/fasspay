@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ExplanationSection() {
   return (
-    <section className="py-10 space-y-5">
+    <section className="py-12 space-y-5">
       <div className="space-y-5">
         <h2 className="text-center text-5xl font-bold">
           PayCode Payment Explained
