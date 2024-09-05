@@ -1,7 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
+import ContactModal from "./ContactModal";
 
 export default function NavBar() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <nav className="w-screen bg-[#473893] p-3">
       <div className="flex items-center justify-between px-24">
@@ -10,7 +15,9 @@ export default function NavBar() {
         </div>
 
         <div className="flex gap-12 items-center">
-          <div className="text-white">Contact Us</div>
+          <div onClick={() => setShowModal(true)} className="text-white">
+            Contact Us
+          </div>
           <div className="text-white">CA</div>
           <div className="text-white rounded-3xl border-white border flex gap-3 items-center py-2 px-6">
             <Image src={"/phone-icon.png"} alt="logo" width={20} height={32} />
@@ -18,6 +25,8 @@ export default function NavBar() {
           </div>
         </div>
       </div>
+
+      {showModal && <ContactModal />}
     </nav>
   );
 }
