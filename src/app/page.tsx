@@ -7,6 +7,8 @@ import ExplanationSection from "@/components/sections/PayCodePaymentExplained";
 import ProtectSection from "@/components/sections/ProtectSection";
 import CustomersSay from "@/components/sections/CustomersSay";
 import FAQs from "@/components/sections/FAQs";
+import AppDownloadSection from "@/components/sections/AppDownloadSection";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <ProtectSection />
       <CustomersSay />
       <FAQs />
+      <AppDownloadSection />
+      <Footer />
     </>
   );
 }
