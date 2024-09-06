@@ -15,7 +15,9 @@ export default function NavBar() {
         </div>
 
         <div className="flex gap-12 items-center">
-          <div onClick={() => setShowModal(true)} className="text-white">
+          <div
+            onClick={() => setShowModal(true)}
+            className="text-white cursor-pointer">
             Contact Us
           </div>
           <div className="text-white">CA</div>
@@ -26,7 +28,9 @@ export default function NavBar() {
         </div>
       </div>
 
-      {showModal && <ContactModal />}
+      {showModal && (
+        <ContactModal isOpen={showModal} onClose={() => setShowModal(false)} />
+      )}
     </nav>
   );
 }

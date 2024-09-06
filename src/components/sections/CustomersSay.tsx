@@ -27,7 +27,7 @@ export default function CustomersSay() {
     nextArrow: <NextArrow />,
     responsive: [
       {
-        breakpoint: 768, // For mobile screens
+        breakpoint: 1024, // For mobile screens
         settings: {
           slidesToShow: 1, // Show 1 testimonial on mobile screens
         },
@@ -42,12 +42,26 @@ export default function CustomersSay() {
         </h2>
       </div>
 
-      <div className="py-7">
+      {/* <div className="py-7">
         <Slider {...settings} className="flex justify-center">
           {testimonialsData.map((test, index) => (
             <div key={index} className="md:mx-[10vw] 2xl:mx-[15vw]">
               <Testimonial
                 key={index}
+                name={test.name}
+                jobTitle={test.jobTitle}
+                image={test.image}
+                testimonial={test.testimonial}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div> */}
+      <div className="md:max-w-6xl 2xl:max-w-[75vw] mx-auto py-7">
+        <Slider {...settings}>
+          {testimonialsData.map((test, index) => (
+            <div key={index} className="mx-24 2xl:mx-16 flex  justify-center">
+              <Testimonial
                 name={test.name}
                 jobTitle={test.jobTitle}
                 image={test.image}
