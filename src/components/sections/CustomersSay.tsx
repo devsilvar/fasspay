@@ -17,12 +17,11 @@ export default function CustomersSay() {
     slidesToShow: 2, // Show 2 testimonials on larger screens
     slidesToScroll: 2,
     centerMode: true,
-
     // variableWidth: true,
     initialSlide: 0,
     centerPadding: "10px",
-    screenLeft: "450px",
-    screenX: "450px",
+    // screenLeft: "450px",
+    // screenX: "450px",
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
@@ -43,7 +42,9 @@ export default function CustomersSay() {
       {
         breakpoint: 480, // For mobile screens
         settings: {
-          slidesToShow: 1, // Show 1 testimonial on mobile screens
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
         },
       },
     ],
@@ -74,7 +75,9 @@ export default function CustomersSay() {
       <div className="max-w-5xl md:max-w-7xl 2xl:max-w-[75vw] mx-auto py-7">
         <Slider {...settings}>
           {testimonialsData.map((test, index) => (
-            <div key={index} className="mx-24 2xl:mx-16 flex justify-center">
+            <div
+              key={index}
+              className="md:mx-24 2xl:mx-16 flex justify-center px-2">
               <Testimonial
                 name={test.name}
                 jobTitle={test.jobTitle}
