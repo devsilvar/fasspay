@@ -15,7 +15,7 @@ export default function Testimonial({
   testimonial,
 }: Props) {
   return (
-    <div className="group hover:scale-105 hover:shadow-lg transition-all duration-300 bg-white h-96 overflow-hidden rounded-tl-[10px] rounded-br-[10px] rounded-tr-[10px] rounded-bl-[100px] border-black border-solid border-b-[5px] w-96 2xl:w-[580px] relative">
+    <div className="group hover:scale-105 hover:shadow-lg transition-all duration-300 bg-white h-96 overflow-hidden rounded-tl-[10px] rounded-br-[10px] rounded-tr-[10px] rounded-bl-[100px] border-black border-solid border-b-[5px] w-[450px] 2xl:w-[580px] relative">
       <div className="p-10">
         <div className="flex items-center justify-between">
           <div>

@@ -8,10 +8,23 @@ export default function NavBar() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <nav className="w-screen bg-[#473893] p-3">
-      <div className="flex items-center justify-between px-24">
+    <nav className="w-screen bg-[#473893] overflow-hidden p-3">
+      <div className="flex items-center justify-between px-4 md:px-24">
         <div>
-          <Image src={"/fasepay-logo.png"} alt="logo" width={111} height={42} />
+          <Image
+            src={"/fasepay-logo.png"}
+            alt="logo"
+            width={111}
+            height={42}
+            className="hidden md:block"
+          />
+          <Image
+            src={"/fasepay-logo.png"}
+            alt="logo"
+            width={75}
+            height={32}
+            className="block md:hidden"
+          />
         </div>
 
         <div className="flex gap-12 items-center">
@@ -20,8 +33,8 @@ export default function NavBar() {
             className="text-white cursor-pointer">
             Contact Us
           </div>
-          <div className="text-white">CA</div>
-          <div className="text-white rounded-3xl border-white border flex gap-3 items-center py-2 px-6">
+          <div className="hidden text-white">CA</div>
+          <div className="hidden text-white rounded-3xl border-white border md:flex gap-3 items-center py-2 px-6">
             <Image src={"/phone-icon.png"} alt="logo" width={20} height={32} />
             Download App -it's free
           </div>

@@ -4,12 +4,12 @@ import ProtectionBulletPoint from "../ProtectionBulletPoint";
 
 export default function ProtectSection() {
   return (
-    <section className="bg-[#111111] py-10 space-y-7">
-      <h2 className="text-center text-white font-bold text-5xl">
+    <section className="bg-[#111111] py-10 space-y-7 w-screen">
+      <h2 className="text-center text-white font-bold text-3xl md:text-5xl">
         How we protect your money and identity
       </h2>
 
-      <div className="w-full flex gap-10 justify-center">
+      <div className="w-full block space-y-5 md:space-y-0 md:flex gap-10 justify-center px-5  md:px-0">
         {protectionData.map((protection, index) => (
           <ProtectionBulletPoint
             key={index}

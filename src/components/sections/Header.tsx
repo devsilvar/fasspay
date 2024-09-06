@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-5 px-24">
-      <div className="space-y-10">
-        <h1 className="text-5xl font-bold">
+    <header className="w-screen overflow-hidden block space-y-10 md:space-y-0 md:flex items-center justify-between py-5 px-5 md:px-24">
+      <div className="space-y-5 md:space-y-10">
+        <h1 className="text-[#111111] text-3xl md:text-5xl font-bold">
           Easily send and receive
-          <br /> money from your customers,
-          <br /> with PayCode
+          <br className="hidden md:block" /> money from your customers,
+          <br className="hidden md:block" /> with PayCode
         </h1>
-        <p className="text-[#111111] text-3xl max-w-[626px]">
+        <p className="text-[#111111] text-base md:text-3xl max-w-[626px]">
           Whether it's business transactions or personal payments, our system
           makes it simple and secure to move funds with ease.
         </p>

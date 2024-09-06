@@ -32,12 +32,26 @@ export default function CustomersSay() {
           slidesToShow: 1, // Show 1 testimonial on mobile screens
         },
       },
+
+      {
+        breakpoint: 768, // For tablet screens
+        settings: {
+          slidesToShow: 1, // Show 1 testimonial on tablet screens
+        },
+      },
+
+      {
+        breakpoint: 480, // For mobile screens
+        settings: {
+          slidesToShow: 1, // Show 1 testimonial on mobile screens
+        },
+      },
     ],
   };
   return (
-    <section className="bg-[#F4F2FF] py-12 customers-say">
-      <div className="w-[560px] ">
-        <h2 className="font-bold text-5xl pl-[10vw] 2xl:pl-[15vw]">
+    <section className="bg-[#F4F2FF] w-screen !overflow-hidden py-12 customers-say">
+      <div className="w-full md:max-w-[560px] ">
+        <h2 className="font-bold text-3xl md:text-5xl pl-5 md:pl-[10vw] 2xl:pl-[15vw]">
           What our customers are saying
         </h2>
       </div>
@@ -57,10 +71,10 @@ export default function CustomersSay() {
           ))}
         </Slider>
       </div> */}
-      <div className="md:max-w-6xl 2xl:max-w-[75vw] mx-auto py-7">
+      <div className="max-w-5xl md:max-w-7xl 2xl:max-w-[75vw] mx-auto py-7">
         <Slider {...settings}>
           {testimonialsData.map((test, index) => (
-            <div key={index} className="mx-24 2xl:mx-16 flex  justify-center">
+            <div key={index} className="mx-24 2xl:mx-16 flex justify-center">
               <Testimonial
                 name={test.name}
                 jobTitle={test.jobTitle}

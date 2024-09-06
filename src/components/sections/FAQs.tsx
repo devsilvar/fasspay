@@ -2,18 +2,18 @@ import React from "react";
 
 export default function FAQs() {
   return (
-    <section className="space-y-5 py-12">
+    <section className="space-y-5 py-12 w-screen">
       <div className="py-5">
-        <h2 className="text-center font-bold text-5xl">
+        <h2 className="text-center font-bold text-3xl md:text-5xl">
           Curious about Fasepay? <br /> We've got answers
         </h2>
-        <p className="text-center text-3xl">
+        <p className="text-center text-base md:text-3xl">
           Some of most frequently asked questions.
         </p>
       </div>
 
-      <div className="w-full flex gap-10 justify-center px-24 ">
-        <div className="bg-[#F1EEFF] md:w-1/2 rounded-tl-[10px] rounded-br-[10px] rounded-tr-[100px] rounded-bl-[10px] p-10 border-b-[5px] border-black">
+      <div className="w-full space-y-5 block md:flex gap-10 justify-center px-5 md:px-24 ">
+        <div className="bg-[#F1EEFF] w-full md:w-1/2 rounded-tl-[10px] rounded-br-[10px] rounded-tr-[100px] rounded-bl-[10px] p-5 md:p-10 border-b-[5px] border-black">
           <h3 className="text-2xl font-bold ">FAQs.</h3>
 
           <div className="space-y-5 py-5">

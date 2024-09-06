@@ -34,19 +34,20 @@ export default function AssuranceSection() {
   return (
     <section
       ref={sectionRef}
-      className='bg-[url("/texture.png")] max-h-[760px] bg-[#111111] overflow-hidden p-12'>
+      className='bg-[url("/texture.png")] max-h-[760px] bg-[#111111] w-screen overflow-hidden p-12'>
       <div className="flex md:flex-row flex-col justify-between">
         <div className="space-y-5 md:w-1/2">
           <div>
-            <h3 className="text-white text-5xl font-medium leading-12">
+            <h3 className="text-white text-center md:text-left text-xl md:text-5xl font-medium leading-12">
               "Rest assured, your business will
-              <br /> soar alongside the elite when you
-              <br /> choose the unparalleled safety
-              <br /> of PayCode for your payments".
+              <br className="hidden md:block" /> soar alongside the elite when
+              you
+              <br className="hidden md:block" /> choose the unparalleled safety
+              <br className="hidden md:block" /> of PayCode for your payments".
             </h3>
           </div>
 
-          <div className="">
+          <div className="hidden md:flex">
             <Image
               src="/cards-1.png"
               alt="logo"
@@ -55,6 +56,16 @@ export default function AssuranceSection() {
               className="md:mt-[80px] 2xl:mt-[190px]"
             />
           </div>
+        </div>
+
+        <div className="w-full flex justify-center py-5">
+          <Image
+            src="/iphone-full.png"
+            alt="logo"
+            width={262}
+            height={352}
+            className="block md:hidden"
+          />
         </div>
 
         <div className="mt-[190px] flex justify-center md:w-1/2">

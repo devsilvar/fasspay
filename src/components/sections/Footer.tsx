@@ -3,13 +3,13 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <section>
-      <div className="flex items-center justify-between gap-5 bg-white py-5 px-24">
+    <section className="w-screen overflow-hidden">
+      <div className="w-full flex items-center justify-between gap-5 bg-white py-5 px-5 md:px-24">
         <div>
           <Image src="/logo-coloured.png" alt="logo" width={80} height={93} />
         </div>
 
-        <div className="flex gap-12">
+        <div className="block md:flex gap-12">
           <li className="list-none cursor-pointer">Privacy Policy</li>
           <li className="list-none cursor-pointer">Terms of Service</li>
           <li className="list-none cursor-pointer">Help/FAQ</li>
@@ -37,7 +37,7 @@ export default function Footer() {
             alt="icon"
             width={35}
             height={35}
-            className="flex-shrink-0"
+            className="flex-shrink-0 sm:w-4"
           />
           <Image
             src="/facebook-icon.png"
