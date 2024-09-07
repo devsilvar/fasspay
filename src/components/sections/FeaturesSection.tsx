@@ -26,7 +26,7 @@ export default function FeaturesSection() {
         </div>
       </div>
 
-      <div className="w-full flex justify-center py-5 bg-[#F4F2FF] px-8">
+      {/* <div className="w-full flex justify-center py-5 bg-[#F4F2FF] px-8">
         <div className="flex gap-3 items-center">
           <Image
             src={"/appstore-logo.png"}
@@ -39,6 +39,28 @@ export default function FeaturesSection() {
             alt="logo"
             width={223}
             height={66}
+          />
+        </div>
+      </div> */}
+      <div className="flex py-5 sm:flex-row gap-4 sm:gap-6 items-center justify-center">
+        <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+          <Image
+            src="/appstore-logo.png"
+            alt="App Store"
+            width={223}
+            height={66}
+            layout="responsive"
+            className="object-contain"
+          />
+        </div>
+        <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+          <Image
+            src="/playstore-logo.png"
+            alt="Play Store"
+            width={223}
+            height={66}
+            layout="responsive"
+            className="object-contain"
           />
         </div>
       </div>

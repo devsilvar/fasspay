@@ -35,10 +35,12 @@ export default function AssuranceSection() {
     <section
       ref={sectionRef}
       className='bg-[url("/texture.png")] max-h-[760px] bg-[#111111] w-screen overflow-hidden p-12'>
-      <div className="flex md:flex-row flex-col justify-between">
-        <div className="space-y-5 md:w-1/2">
-          <div>
-            <h3 className="text-white text-center md:text-left text-xl md:text-5xl font-medium leading-12">
+      <div className="flex  md:flex-row flex-col justify-between">
+        <div className="space-y-5 md:w-full ">
+          <div className="w-full ">
+            <h3
+              // className=" text-white bg-red-500 w-[600px]"
+              className="text-white w-full  text-center md:text-left text-xl md:text-5xl font-medium leading-12">
               "Rest assured, your business will
               <br className="hidden md:block" /> soar alongside the elite when
               you
@@ -53,7 +55,7 @@ export default function AssuranceSection() {
               alt="logo"
               width={762}
               height={752}
-              className="md:mt-[80px] 2xl:mt-[190px]"
+              className="hidden md:block md:mt-[80px] 2xl:mt-[190px]"
             />
           </div>
         </div>
@@ -68,10 +70,10 @@ export default function AssuranceSection() {
           />
         </div>
 
-        <div className="mt-[190px] flex justify-center md:w-1/2">
+        <div className="mt-[190px] flex justify-center md:w-full">
           <Image
             src="/phone-model.png"
-            alt="logo"
+            alt="phone"
             width={418}
             height={820}
             className={`transition-transform duration-1000 ease-out transform ${

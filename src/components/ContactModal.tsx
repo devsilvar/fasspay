@@ -16,15 +16,17 @@ export default function ContactModal({ isOpen, onClose }: Props) {
         className="fixed inset-0 bg-black bg-opacity-50 z-10"
         onClick={onClose}></div>
 
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-5 z-40">
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 sm:p-6 z-40 w-[95%] max-w-md sm:max-w-lg md:max-w-xl  shadow-lg overflow-y-auto max-h-[90vh]">
         <form className="p-3 space-y-5">
           <div>
-            <h2 className="text-3xl font-bold">Speak To Us Today!</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">
+              Speak To Us Today!
+            </h2>
             <p>Contact us to learn more.</p>
           </div>
 
           <div className="space-y-5">
-            <div className="flex gap-3">
+            <div className="flex gap-5 md:gap-3 flex-col md:flex-col">
               <div className="relative">
                 <Image
                   src="/person-icon.png"
@@ -35,7 +37,7 @@ export default function ContactModal({ isOpen, onClose }: Props) {
                 />
                 <input
                   type="text"
-                  className="w-full border border-black px-10 rounded py-2"
+                  className="w-full border border-[#111111] px-10 rounded py-2 text-sm"
                   placeholder="Name"
                 />
               </div>
@@ -50,7 +52,7 @@ export default function ContactModal({ isOpen, onClose }: Props) {
                 />
                 <input
                   type="email"
-                  className="w-full border rounded border-black px-10 py-2"
+                  className="w-full border rounded border-[#111111] px-10 py-2 text-sm"
                   placeholder="Email address"
                 />
               </div>
@@ -65,14 +67,14 @@ export default function ContactModal({ isOpen, onClose }: Props) {
                 />
                 <input
                   type="tel"
-                  className="w-full border rounded border-black px-10 py-2"
+                  className="w-full border rounded border-[#111111] px-10 py-2 text-sm"
                   placeholder="Phone number"
                 />
               </div>
             </div>
 
             <div>
-              <select className="w-full border text-white rounded  bg-[#111111] px-3 py-2">
+              <select className="w-full border text-sm text-white rounded  bg-[#111111] px-3 py-2">
                 <select>Select an option</select>
                 <option value={"Fraud"}>Fraud</option>
                 <option value={"KYC"}>KYC</option>
@@ -85,7 +87,7 @@ export default function ContactModal({ isOpen, onClose }: Props) {
             <div>
               <textarea
                 placeholder="Type a message"
-                className="w-full rounded border border-black px-3 py-2"
+                className="w-full text-sm rounded border border-[#111111] px-3 py-2 h-24 resize-none"
               />
             </div>
 

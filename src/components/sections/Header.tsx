@@ -15,19 +15,43 @@ export default function Header() {
           makes it simple and secure to move funds with ease.
         </p>
 
-        <div className="flex gap-3 items-center">
+        {/* <div className="flex gap-3 items-center">
           <Image
             src={"/appstore-logo.png"}
             alt="logo"
             width={223}
             height={66}
+            // className="sm:w-5 sm:h-5 md:w-auto md:h-auto"
           />
           <Image
             src={"/playstore-logo.png"}
             alt="logo"
             width={223}
             height={66}
+            className="w-auto h-auto"
           />
+        </div> */}
+        <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center ">
+          <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+            <Image
+              src="/appstore-logo.png"
+              alt="App Store"
+              width={223}
+              height={66}
+              layout="responsive"
+              className="object-contain"
+            />
+          </div>
+          <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+            <Image
+              src="/playstore-logo.png"
+              alt="Play Store"
+              width={223}
+              height={66}
+              layout="responsive"
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
 

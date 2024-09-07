@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Space_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Space_Grotesk({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const spaceMono = Space_Mono({
+  weight: ["400", "700"], // Space Mono is available only in 400 (regular) and 700 (bold)
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "FasePay",
@@ -16,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={spaceGrotesk.className}>{children}</body>
     </html>
   );
 }
