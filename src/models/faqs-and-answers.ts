@@ -1,44 +1,47 @@
 export const faqsAndAnswers = [
   {
     id: 1,
-    question: "What is FasePay?",
+    question: "Is FasePay Safe & Secure?",
     answer:
-      "FasePay is a crypto wallet and payment platform that allows you to send and receive crypto.",
+      "FasePay implements the highest level of security and end to end encryption and tracking to facilitate B2B and C2B transactions.",
   },
   {
     id: 2,
-    question: "Can I customize the paycode appearance?",
-    answer: "ikndd",
+    question: "How Do I Send Money or Pay a Merchant?",
+    answer:
+      "To send money using FasePay PayCodes, simple fund your base currency wallet with the options provided. SELECT 'Send Money'. Default your currency and select the receiving currency to generate a PayCode. Then share the paycode details/receipt to the receiver (Merchant or Individuals). The receiver will automatically apply the paycode and receive value instantly.",
   },
   {
     id: 3,
-    question: "What payment methods can customers use with pay codes?",
-    answer: "FasePay global",
+    question: "Can PayCodes Be Cashed Out In My Home Country?",
+    answer: "We currently do not support physical cash pick up.",
   },
   {
     id: 4,
-    question: "Can I cancel a payment after generating a pay code?",
-    answer: "testing this out",
+    question: "What are the fees?",
+    answer:
+      "We do not have a transaction fee in generating paycode. We only allow you to agree to our exchange rates for cross-currencies.",
   },
   {
     id: 5,
-    question: "Are payments sent to an African Merchant encrypted",
-    answer: "Hello",
-  },
-  {
-    id: 6,
-    question: "What is FasePay?",
-    answer: "Sup",
-  },
-  {
-    id: 7,
-    question: "What is FasePay?",
+    question: "How soon can the recipient receive and confirm payment?",
     answer:
-      "FasePay is a crypto wallet and payment platform that allows you to send and receive crypto.",
+      "The receiver gets the payment value in les than 30secs. It is instant.",
   },
-  {
-    id: 8,
-    question: "What is FasePay?",
-    answer: "HHlelnme",
-  },
+  // {
+  //   id: 6,
+  //   question: "What is FasePay?",
+  //   answer: "Sup",
+  // },
+  // {
+  //   id: 7,
+  //   question: "What is FasePay?",
+  //   answer:
+  //     "FasePay is a crypto wallet and payment platform that allows you to send and receive crypto.",
+  // },
+  // {
+  //   id: 8,
+  //   question: "What is FasePay?",
+  //   answer: "HHlelnme",
+  // },
 ];
