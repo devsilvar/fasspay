@@ -34,18 +34,15 @@ export default function AssuranceSection() {
   return (
     <section
       ref={sectionRef}
-      className='bg-[url("/texture.png")] max-h-[760px] bg-[#111111] w-screen overflow-hidden p-12'>
+      className='bg-[url("/texture.png")] relative min-h-[760px] bg-[#111111] w-screen overflow-hidden p-12'>
       <div className="flex  md:flex-row flex-col justify-between">
         <div className="space-y-5 md:w-full ">
           <div className="w-full ">
             <h3
               // className=" text-white bg-red-500 w-[600px]"
-              className="text-white w-full  text-center md:text-left text-xl md:text-5xl font-medium leading-12">
-              "Rest assured, your business will
-              <br className="hidden md:block" /> soar alongside the elite when
-              you
-              <br className="hidden md:block" /> choose the unparalleled safety
-              <br className="hidden md:block" /> of PayCode for your payments".
+              className="text-white  w-full max-w-[70vw] text-center md:text-left text-xl md:text-5xl font-medium md:leading-15">
+              "Be rest assured, your business will soar alongside the elite when
+              you choose the unparalleled safety of PayCode for your payments".
             </h3>
           </div>
 
@@ -55,22 +52,22 @@ export default function AssuranceSection() {
               alt="logo"
               width={762}
               height={752}
-              className="hidden md:block md:mt-[80px] 2xl:mt-[190px]"
+              className="hidden md:block absolute bottom-0"
             />
           </div>
         </div>
 
-        <div className="w-full flex justify-center py-5">
+        <div className="w-full md:hidden flex justify-center py-5">
           <Image
             src="/iphone-full.png"
             alt="logo"
             width={262}
             height={352}
-            className="block md:hidden"
+            className="block "
           />
         </div>
 
-        <div className="mt-[190px] flex justify-center md:w-full">
+        <div className="mt-[150px] hidden absolute md:right-12 2xl:right-20 md:flex justify-center ">
           <Image
             src="/phone-model.png"
             alt="phone"

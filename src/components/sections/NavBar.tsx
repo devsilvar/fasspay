@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import ContactModal from "./ContactModal";
+import ContactModal from "../ContactModal";
 
 export default function NavBar() {
   const [showModal, setShowModal] = useState(false);

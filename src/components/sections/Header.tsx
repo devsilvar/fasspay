@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -43,14 +44,18 @@ export default function Header() {
             />
           </div>
           <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
-            <Image
-              src="/playstore-logo.png"
-              alt="Play Store"
-              width={223}
-              height={66}
-              layout="responsive"
-              className="object-contain"
-            />
+            <Link
+              href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+              target="_blank">
+              <Image
+                src="/playstore-logo.png"
+                alt="Play Store"
+                width={223}
+                height={66}
+                layout="responsive"
+                className="object-contain"
+              />
+            </Link>
           </div>
         </div>
       </div>

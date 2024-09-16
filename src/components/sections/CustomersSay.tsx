@@ -51,9 +51,10 @@ export default function CustomersSay() {
   };
   return (
     <section className="bg-[#F4F2FF] w-screen !overflow-hidden py-12 customers-say">
-      <div className="w-full md:max-w-[560px] ">
+      <div className="w-full  ">
         <h2 className="font-bold text-3xl md:text-5xl pl-5 md:pl-[10vw] 2xl:pl-[15vw]">
-          What our customers are saying
+          What our customers
+          <br /> are saying
         </h2>
       </div>
 
