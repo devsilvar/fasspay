@@ -1,15 +1,15 @@
 export const faqsAndAnswers = [
   {
     id: 1,
-    question: "Is FasePay Safe & Secure?",
+    question: "Is Faaspay Safe & Secure?",
     answer:
-      "FasePay implements the highest level of security and end to end encryption and tracking to facilitate B2B and C2B transactions.",
+      "Faaspay implements the highest level of security and end to end encryption and tracking to facilitate B2B and C2B transactions.",
   },
   {
     id: 2,
     question: "How Do I Send Money or Pay a Merchant?",
     answer:
-      "To send money using FasePay PayCodes, simple fund your base currency wallet with the options provided. SELECT 'Send Money'. Default your currency and select the receiving currency to generate a PayCode. Then share the paycode details/receipt to the receiver (Merchant or Individuals). The receiver will automatically apply the paycode and receive value instantly.",
+      "To send money using Faaspay PayCodes, simple fund your base currency wallet with the options provided. SELECT 'Send Money'. Default your currency and select the receiving currency to generate a PayCode. Then share the paycode details/receipt to the receiver (Merchant or Individuals). The receiver will automatically apply the paycode and receive value instantly.",
   },
   {
     id: 3,
@@ -30,18 +30,18 @@ export const faqsAndAnswers = [
   },
   // {
   //   id: 6,
-  //   question: "What is FasePay?",
+  //   question: "What is Faaspay?",
   //   answer: "Sup",
   // },
   // {
   //   id: 7,
-  //   question: "What is FasePay?",
+  //   question: "What is Faaspay?",
   //   answer:
-  //     "FasePay is a crypto wallet and payment platform that allows you to send and receive crypto.",
+  //     "Faaspay is a crypto wallet and payment platform that allows you to send and receive crypto.",
   // },
   // {
   //   id: 8,
-  //   question: "What is FasePay?",
+  //   question: "What is Faaspay?",
   //   answer: "HHlelnme",
   // },
 ];

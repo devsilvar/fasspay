@@ -14,7 +14,7 @@ export default function FAQs() {
     <section className="space-y-5 py-12 w-screen">
       <div className="py-5">
         <h2 className="text-center font-bold text-3xl md:text-5xl">
-          Curious about Fasepay? <br /> {`We've got answers`}
+          Curious about Faaspay? <br /> {`We've got answers`}
         </h2>
         <p className="text-center text-base md:text-3xl">
           Some of our most frequently asked questions.

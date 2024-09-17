@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/sections/NavBar";
 import Header from "@/components/sections/Header";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import AssuranceSection from "@/components/sections/AssuranceSection";

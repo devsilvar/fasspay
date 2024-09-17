@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -46,7 +47,7 @@ export default function Header() {
             />
           </a>
           <a
-            href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+            href="https://play.google.com/store/apps/details?id=co.wallx.Faaspay"
             target="_blank"
             className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
             <Image

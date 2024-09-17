@@ -10,7 +10,7 @@ export default function ExplanationSection() {
           PayCode Payment Explained
         </h2>
         <p className="text-center text-base md:text-3xl">
-          Here’s How FasePay Powers African Businesses
+          Here’s How Faaspay Powers African Businesses
         </p>
       </div>
 

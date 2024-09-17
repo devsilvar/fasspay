@@ -17,7 +17,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FasePay",
+  title: "FaasPay",
   description: "Transactions",
 };
 
