@@ -9,20 +9,26 @@ export default function AppDownloadSection() {
       </h2>
 
       <div className="w-full flex  sm:flex-row justify-center items-center gap-4 mb-8">
-        <Image
-          src="/appstore-logo.png"
-          alt="App Store"
-          width={180}
-          height={53}
-          className="w-auto h-auto  max-w-[180px]"
-        />
-        <Image
-          src="/playstore-logo.png"
-          alt="Google Play"
-          width={180}
-          height={53}
-          className="w-auto h-auto max-w-[180px]"
-        />
+        <a href="" target="_blank">
+          <Image
+            src="/appstore-logo.png"
+            alt="App Store"
+            width={180}
+            height={53}
+            className="w-auto h-auto  max-w-[180px]"
+          />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+          target="_blank">
+          <Image
+            src="/playstore-logo.png"
+            alt="Google Play"
+            width={180}
+            height={53}
+            className="w-auto h-auto max-w-[180px]"
+          />
+        </a>
       </div>
 
       <Image

@@ -11,8 +11,8 @@ export default function Header() {
           <br className="hidden md:block" /> with PayCode
         </h1>
         <p className="text-[#111111] text-base md:text-3xl max-w-[626px]">
-          Whether it's business transactions or personal payments, our system
-          makes it simple and secure to move funds with ease.
+          {`    Whether it's business transactions or personal payments, our system
+          makes it simple and secure to move funds with ease.`}
         </p>
 
         {/* <div className="flex gap-3 items-center">
@@ -32,7 +32,10 @@ export default function Header() {
           />
         </div> */}
         <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center ">
-          <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+          <a
+            href=""
+            target="_blank"
+            className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
             <Image
               src="/appstore-logo.png"
               alt="App Store"
@@ -41,8 +44,11 @@ export default function Header() {
               layout="responsive"
               className="object-contain"
             />
-          </div>
-          <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+            target="_blank"
+            className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
             <Image
               src="/playstore-logo.png"
               alt="Play Store"
@@ -51,7 +57,7 @@ export default function Header() {
               layout="responsive"
               className="object-contain"
             />
-          </div>
+          </a>
         </div>
       </div>
 

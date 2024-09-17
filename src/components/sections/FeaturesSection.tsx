@@ -43,7 +43,10 @@ export default function FeaturesSection() {
         </div>
       </div> */}
       <div className="flex py-5 sm:flex-row gap-4 sm:gap-6 items-center justify-center">
-        <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+        <a
+          href=""
+          target="_blank"
+          className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
           <Image
             src="/appstore-logo.png"
             alt="App Store"
@@ -52,8 +55,11 @@ export default function FeaturesSection() {
             layout="responsive"
             className="object-contain"
           />
-        </div>
-        <div className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+          target="_blank"
+          className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
           <Image
             src="/playstore-logo.png"
             alt="Play Store"
@@ -62,7 +68,7 @@ export default function FeaturesSection() {
             layout="responsive"
             className="object-contain"
           />
-        </div>
+        </a>
       </div>
     </section>
   );

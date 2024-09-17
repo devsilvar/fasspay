@@ -34,10 +34,13 @@ export default function NavBar() {
             Contact Us
           </div>
           <div className="hidden text-white">CA</div>
-          <div className="hidden text-white rounded-3xl border-white border md:flex gap-3 items-center py-2 px-6">
+          <a
+            href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+            target="_blank"
+            className="hidden text-white rounded-3xl border-white border md:flex gap-3 items-center py-2 px-6">
             <Image src={"/phone-icon.png"} alt="logo" width={20} height={32} />
-            Download App -it's free
-          </div>
+            {`Download App -it's free`}
+          </a>
         </div>
       </div>
 

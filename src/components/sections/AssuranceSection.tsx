@@ -41,11 +41,12 @@ export default function AssuranceSection() {
             <h3
               // className=" text-white bg-red-500 w-[600px]"
               className="text-white w-full  text-center md:text-left text-xl md:text-5xl font-medium leading-12">
-              "Rest assured, your business will
+              {`"Rest assured, your business will`}
               <br className="hidden md:block" /> soar alongside the elite when
               you
               <br className="hidden md:block" /> choose the unparalleled safety
-              <br className="hidden md:block" /> of PayCode for your payments".
+              <br className="hidden md:block" />{" "}
+              {`of PayCode for your payments".`}
             </h3>
           </div>
 
