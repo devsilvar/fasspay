@@ -41,7 +41,7 @@ export default function FeaturesSection() {
           />
         </a>
         <a
-          href="https://play.google.com/store/apps/details?id=co.wallx.Faaspay"
+          href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
           target="_blank"
           className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
           <Image

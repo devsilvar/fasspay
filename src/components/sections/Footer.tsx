@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <a
-          href="https://play.google.com/store/apps/details?id=co.wallx.Faaspay"
+          href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
           target="_blank"
           className="text-white bg-[#473893] rounded-3xl border-white border flex gap-3 text-xs md:text-base items-center py-2 px-6">
           <Image src={"/phone-icon.png"} alt="logo" width={20} height={32} />
