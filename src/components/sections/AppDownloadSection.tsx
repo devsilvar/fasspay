@@ -10,26 +10,36 @@ export default function AppDownloadSection() {
 
       <div className="w-full flex  sm:flex-row justify-center items-center gap-4 mb-8">
         <div className="relative w-[120px] h-[53px] sm:w-[200px] sm:h-[59px] lg:w-[220px] lg:h-[65px]">
-          <Image
-            src="/appstore-logo.png"
-            alt="App Store"
-            fill
-            sizes="(max-width: 640px) 120px, (max-width: 1024px) 200px, 220px"
-            style={{
-              objectFit: "contain",
-            }}
-          />
+          <a
+            href="https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075s"
+            target="_blank"
+            className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+            <Image
+              src="/appstore-logo.png"
+              alt="App Store"
+              fill
+              sizes="(max-width: 640px) 120px, (max-width: 1024px) 200px, 220px"
+              style={{
+                objectFit: "contain",
+              }}
+            />
+          </a>
         </div>
         <div className="relative w-[120px] h-[53px] sm:w-[200px] sm:h-[59px] lg:w-[220px] lg:h-[65px]">
-          <Image
-            src="/playstore-logo.png"
-            alt="Google Play"
-            fill
-            sizes="(max-width: 640px) 120px, (max-width: 1024px) 200px, 220px"
-            style={{
-              objectFit: "contain",
-            }}
-          />
+          <a
+            href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
+            target="_blank"
+            className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+            <Image
+              src="/playstore-logo.png"
+              alt="Google Play"
+              fill
+              sizes="(max-width: 640px) 120px, (max-width: 1024px) 200px, 220px"
+              style={{
+                objectFit: "contain",
+              }}
+            />
+          </a>
         </div>
       </div>
 

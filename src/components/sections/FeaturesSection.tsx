@@ -28,7 +28,7 @@ export default function FeaturesSection() {
 
       <div className="flex py-5 sm:flex-row gap-4 sm:gap-6 items-center justify-center">
         <a
-          href=""
+          href="https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075s"
           target="_blank"
           className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
           <Image

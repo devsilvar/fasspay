@@ -12,8 +12,7 @@ export default function Header() {
           <br className="hidden md:block" /> with PayCode
         </h1>
         <p className="text-[#111111] text-base md:text-3xl max-w-[626px]">
-          {`    Whether it's business transactions or personal payments, our system
-          makes it simple and secure to move funds with ease.`}
+          {`Whether it's business transactions or personal payments, our system makes it simple and secure to move funds with Ease without releasing personal banking details.`}
         </p>
 
         {/* <div className="flex gap-3 items-center">
@@ -34,7 +33,7 @@ export default function Header() {
         </div> */}
         <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center ">
           <a
-            href=""
+            href="https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075"
             target="_blank"
             className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
             <Image
