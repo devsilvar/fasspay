@@ -11,7 +11,7 @@ export default function AppDownloadSection() {
       <div className="w-full flex  sm:flex-row justify-center items-center gap-4 mb-8">
         <div className="relative w-[120px] h-[53px] sm:w-[200px] sm:h-[59px] lg:w-[220px] lg:h-[65px]">
           <a
-            href="https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075s"
+            href="https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075"
             target="_blank"
             className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
             <Image
