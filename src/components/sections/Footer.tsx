@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { TiLocation } from "react-icons/ti";
 
 interface Props {
   src: string;
@@ -25,7 +26,7 @@ export default function Footer() {
       <div className="w-full flex items-start md:items-center justify-between gap-5 bg-white py-5 px-5 md:px-24">
         <div>
           <Image
-            src="/logo-coloured.png"
+            src="/faaspay-logo.svg"
             alt="logo"
             width={80}
             height={93}
@@ -34,7 +35,7 @@ export default function Footer() {
         </div>
         <div className="block md:hidden">
           <Image
-            src="/logo-coloured.png"
+            src="/faaspay-logo.svg"
             alt="logo"
             width={40}
             height={73}
@@ -63,7 +64,15 @@ export default function Footer() {
             Money Service Business. MSB registration number: 22718986. Faaspay
             Technology Limited, Canada.
           </p>
-
+          <div className="flex items-start lg:items-center gap-1">
+            <TiLocation size={20} />
+            <p className="text-base font-medium text-[#333]">
+              290 King Street E Kitchener, ON N2G 2L3 Cannada
+            </p>
+          </div>
+          <p className="text-base font-medium text-[#333]">
+            Fax Only: +1 519-804-9236
+          </p>
           <p>© 2024 Faaspay by WallX Innovation Inc.</p>
         </div>
         <div className="flex items-center gap-3 sm:gap-4 md:gap-5 py-5 md:py-0">

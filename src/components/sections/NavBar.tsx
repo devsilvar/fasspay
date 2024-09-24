@@ -12,14 +12,14 @@ export default function NavBar() {
       <div className="flex items-center justify-between px-4 md:px-24">
         <div>
           <Image
-            src={"/fasepay-logo.png"}
+            src={"/faaspay-white.svg"}
             alt="logo"
             width={111}
             height={42}
             className="hidden md:block"
           />
           <Image
-            src={"/fasepay-logo.png"}
+            src={"/faaspay-white.svg"}
             alt="logo"
             width={75}
             height={32}
