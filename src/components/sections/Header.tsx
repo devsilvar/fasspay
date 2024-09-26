@@ -6,14 +6,14 @@ export default function Header() {
   return (
     <header className="w-screen overflow-hidden block space-y-10 md:space-y-0 md:flex items-center justify-between py-5 px-5 md:px-24">
       <div className="space-y-5 md:space-y-10">
-        <h1 className="text-[#111111] text-3xl md:text-5xl font-bold">
+        <h1 className="text-[#111111] text-2xl md:text-5xl font-bold leading-[30px] md:leading-[55px]">
           Seamlessly send and receive
           <br className="hidden md:block" /> money from your customers,
           <br className="hidden md:block" /> in less than 5-Minutes using
           PayCodes.
         </h1>
-        <p className="text-[#111111] text-base md:text-3xl max-w-[626px]">
-          {`"Experience hassle-free fund transfers for business and personal use - it's simple, secure, and no personal banking details needed!"`}
+        <p className="text-[#111111] text-[14px] md:text-3xl max-w-[626px]">
+          {`Experience hassle-free fund transfers for business and personal use - it's simple, secure, and no personal banking details needed!`}
         </p>
 
         {/* <div className="flex gap-3 items-center">
