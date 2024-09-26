@@ -9,7 +9,9 @@ export const testimonialsData = [
   {
     name: "Mr Olawale Moses",
     jobTitle: "Clothing Boutique Owner",
-    image: "/testimonial-image-2.png",
+    // image: "/testimonial-image-2.png",
+    image: "",
+    label: "OM",
     testimonial:
       "Ever since I started using Faaspay, selling my handmade dresses internationally has become a breeze! My customers love the ease of the paycode system, and I feel confident knowing their information is secure.",
   },

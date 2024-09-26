@@ -6,6 +6,7 @@ interface Props {
   jobTitle: string;
   image: string;
   testimonial: string;
+  label?: string;
 }
 
 export default function Testimonial({
@@ -13,6 +14,7 @@ export default function Testimonial({
   jobTitle,
   image,
   testimonial,
+  label,
 }: Props) {
   return (
     <div className="group  hover:shadow-lg transition-all duration-300 bg-white h-96 overflow-hidden rounded-tl-[10px] rounded-br-[10px] rounded-tr-[10px] rounded-bl-[100px] border-black border-solid border-b-[5px] w-full md:w-[450px] 2xl:w-[580px] relative">
@@ -27,7 +29,14 @@ export default function Testimonial({
                 <p className="font-semibold">{jobTitle}</p>
               </div>
               <div>
-                <Image src={image} alt="logo" width={42} height={42} />
+                {!image && (
+                  <div className="w-full bg-orange-500 text-white text-base flex items-center justify-center h-[42px] w-[42px] rounded-full">
+                    {label}
+                  </div>
+                )}
+                {image && (
+                  <Image src={image} alt="logo" width={42} height={42} />
+                )}
               </div>
             </div>
           </div>

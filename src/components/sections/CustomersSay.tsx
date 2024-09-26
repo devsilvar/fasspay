@@ -84,6 +84,7 @@ export default function CustomersSay() {
                 jobTitle={test.jobTitle}
                 image={test.image}
                 testimonial={test.testimonial}
+                label={test?.label}
               />
             </div>
           ))}
