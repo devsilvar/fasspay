@@ -8,7 +8,7 @@ export default function Header() {
       <div className="space-y-5 md:space-y-10">
         <h1 className="text-[#111111] text-2xl md:text-5xl font-bold leading-[30px] md:leading-[55px]">
           Seamlessly send and receive
-          <br className="hidden md:block" /> money from your customers,
+          <br className="hidden md:block" /> money from your customers
           <br className="hidden md:block" /> in less than 5-Minutes using
           PayCodes.
         </h1>
