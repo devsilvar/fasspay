@@ -2,12 +2,12 @@ export const protectionData = [
   {
     title: "Standard Identity Verification",
     description:
-      "Designed for all businesses who need to remotely verify a customer's digital identity with a high degree of assurance and confidence.",
+      "FaasPay is designed for business of all sizes with standard verifiication process. This meeans that businesses on FaasPay can trust each other while they transact securely",
   },
   {
     title: "Advanced Document Verification",
     description:
-      "A full document verification set of results from a document and biometric check",
+      "FaasPay goes as far as veerifying documentation and biometric of business owners as part of itts advanced KYC process",
   },
   {
     title: "Know Your Customer (KYC)",

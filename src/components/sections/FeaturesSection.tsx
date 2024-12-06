@@ -15,7 +15,7 @@ export default function FeaturesSection() {
               <br /> get paid seamlessly
             </p>
             <p className="text-[#473893] text-base md:text-3xl">
-              Checkout benefits for our customer
+              Check Out benefits for our customer
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {featuresData.map((feature, index) => (

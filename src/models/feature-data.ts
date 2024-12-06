@@ -7,7 +7,7 @@ export const featuresData = [
   {
     title: "Secure transaction processing",
     description:
-      "Faaspay employs fraud prevention measures to protect both you and your customer.",
+      "FaasPay employs fraud prevention measures to protect both you and your customer.",
   },
   {
     title: "Settlement in your currency",

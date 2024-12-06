@@ -2,7 +2,7 @@ export const explanationData = [
   {
     title: "Getting Started",
     description:
-      "Sign Up: Download the Faaspay App only avaliable for Canada & US Market. Get Verified: Upload all your KYC information and documents' for verification Start Sending Money: When activated you can begin to generate PayCode to send money or make payments securely.",
+      "Sign Up: Download the Faaspay App only avaliable for NORTH AMERICAN markets. Get Verified: Upload all your KYC information and documents' for verification. Start Sending Money: When activated you can begin to generate PayCode to send money or make payments securely.",
   },
   {
     title: "Receiving Payment",

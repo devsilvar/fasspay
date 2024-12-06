@@ -25,6 +25,9 @@ export default function NavBar() {
             height={32}
             className="block md:hidden"
           />
+          <p className="text-white text-sm lg:text-base mt-2 font-bold">
+            by WallX
+          </p>
         </div>
 
         <div className="flex gap-12 items-center">

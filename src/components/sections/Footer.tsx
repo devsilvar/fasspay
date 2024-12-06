@@ -5,10 +5,14 @@ import { TiLocation } from "react-icons/ti";
 interface Props {
   src: string;
   alt: string;
+  href: string;
 }
 
-const SocialIcon = ({ src, alt }: Props) => (
-  <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10">
+const SocialIcon = ({ src, alt, href }: Props) => (
+  <a
+    href={href}
+    target="_blank"
+    className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10">
     <Image
       src={src}
       alt={alt}
@@ -17,7 +21,7 @@ const SocialIcon = ({ src, alt }: Props) => (
       layout="responsive"
       className="object-contain"
     />
-  </div>
+  </a>
 );
 
 export default function Footer() {
@@ -59,15 +63,14 @@ export default function Footer() {
       <footer className="w-full text-sm bg-[#F4F2FF] md:flex items-center px-10 py-5 md:py-24">
         <div className="space-y-5">
           <p className="text-sm md:text-base">
-            Faaspay Technology Limited, Canada, is registered and regularized by
-            the Financial Transactions and Report Analysis Center of Canada as a
-            Money Service Business. MSB registration number: 22718986. Faaspay
-            Technology Limited, Canada.
+            FaasPay by WallX is a WallX Innovation Inc. Company, duly registered
+            and regularized by Financial Transaction and Report Analysius Centre
+            of Canada as a Money Service Business. MSB Registration No: 22718986
           </p>
           <div className="flex items-start lg:items-center gap-1">
             <TiLocation size={20} />
             <p className="text-base font-medium text-[#333]">
-              290 King Street E Kitchener, ON N2G 2L3 Cannada
+              290 King Street E Kitchener, ON N2G 2L3 Canada
             </p>
           </div>
           <p className="text-base font-medium text-[#333]">
@@ -76,10 +79,22 @@ export default function Footer() {
           <p>© 2024 Faaspay by WallX Innovation Inc.</p>
         </div>
         <div className="flex items-center gap-3 sm:gap-4 md:gap-5 py-5 md:py-0">
-          <SocialIcon src="/twitter-icon.png" alt="Twitter" />
-          <SocialIcon src="/facebook-icon.png" alt="Facebook" />
-          <SocialIcon src="/instagram-icon.png" alt="Instagram" />
-          <SocialIcon src="/linkedin-icon.png" alt="LinkedIn" />
+          <SocialIcon
+            href="https://x.com/faaspayng/status/1864629941775602075"
+            src="/twitter-icon.png"
+            alt="Twitter"
+          />
+          <SocialIcon
+            href="https://www.facebook.com/share/p/18NtM8jcv4/"
+            src="/facebook-icon.png"
+            alt="Facebook"
+          />
+          <SocialIcon
+            href="https://www.facebook.com/share/p/18NtM8jcv4/"
+            src="/instagram-icon.png"
+            alt="Instagram"
+          />
+          <SocialIcon href="" src="/linkedin-icon.png" alt="LinkedIn" />
         </div>
       </footer>
     </section>
