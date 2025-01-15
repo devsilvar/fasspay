@@ -67,6 +67,7 @@ export default function Footer() {
             and regularized by Financial Transaction and Report Analysius Centre
             of Canada as a Money Service Business. MSB Registration No: 22718986
           </p>
+
           <div className="flex items-start lg:items-center gap-1">
             <TiLocation size={20} />
             <p className="text-base font-medium text-[#333]">
@@ -76,8 +77,53 @@ export default function Footer() {
           <p className="text-base font-medium text-[#333]">
             Fax Only: +1 519-804-9236
           </p>
-          <p>© 2024 Faaspay by WallX Innovation Inc.</p>
+          <div className="flex items-start flex-col gap-4">
+            <h2 className="text-[20px] font-bold ttext-[#111]">Powered By:</h2>
+            <div className="flex items-center gap-4">
+              <Image
+                src="/stripe.jpeg"
+                alt="stripe"
+                width={1000}
+                height={1000}
+                quality={100}
+                className="w-[80px] h-auto"
+              />
+              <Image
+                src="/flutterwave.jpeg"
+                alt="flutterwave"
+                width={1000}
+                height={1000}
+                quality={100}
+                className="w-[120px] lg:w-[150px] h-auto"
+              />
+              <Image
+                src="/veriff.jpeg"
+                alt="veriff"
+                width={1000}
+                height={1000}
+                quality={100}
+                className="w-[80px] lg:w-[150px] h-auto"
+              />
+            </div>
+          </div>
+          <div className="flex items-start flex-col gap-4">
+            <h2 className="text-[20px] font-bold ttext-[#111]">
+              Cards Supported:
+            </h2>
+            <div className="flex items-center gap-4">
+              <Image
+                src="/visa.jpeg"
+                alt="visa"
+                width={1000}
+                height={1000}
+                quality={100}
+                className="w-[100px] lg:w-[120px] h-auto"
+              />
+            </div>
+          </div>
+          <p>© {new Date().getFullYear()} Faaspay by WallX Innovation Inc.</p>
         </div>
+
         <div className="flex items-center gap-3 sm:gap-4 md:gap-5 py-5 md:py-0">
           <SocialIcon
             href="https://x.com/faaspayng/status/1864629941775602075"
