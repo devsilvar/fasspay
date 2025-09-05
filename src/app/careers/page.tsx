@@ -82,7 +82,7 @@ export default function Careers() {
         </h1>
 
         <p className='text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8'>
-          Build the future of cross-border payments. We're a licensed MSB
+          Build the future of cross-border payments. We&apos;re a licensed MSB
           delivering secure, intuitive payment infrastructure connecting North
           America to Africa.
         </p>
