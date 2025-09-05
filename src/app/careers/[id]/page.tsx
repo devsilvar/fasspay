@@ -28,7 +28,7 @@ const JobDetailView = ({ job }: { job: JobProps }) => {
         <div className='mb-8'>
           <BackButton link='/careers' />
           <div className='bg-white/80 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 mb-8'>
-            <div className='flex items-start justify-between mb-6'>
+            <div className='flex md:flex-row flex-col gap-y-10 items-start justify-between mb-6'>
               <div>
                 <div className='flex items-center gap-3 mb-3'>
                   <h1 className='text-3xl font-bold text-gray-900 tracking-tight'>
@@ -99,7 +99,7 @@ const JobDetailView = ({ job }: { job: JobProps }) => {
             {/* Responsibilities */}
             <div className='bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8'>
               <h2 className='text-xl font-semibold text-gray-900 mb-6'>
-                What you'll do
+                What you&apos;ll do
               </h2>
               <div className='space-y-4'>
                 {job.responsibilities.map((item, i) => (
@@ -118,7 +118,7 @@ const JobDetailView = ({ job }: { job: JobProps }) => {
             {/* Requirements */}
             <div className='bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-8'>
               <h2 className='text-xl font-semibold text-gray-900 mb-6'>
-                What we're looking for
+                What we&apos;re looking for
               </h2>
               <div className='space-y-4'>
                 {job.requirements.map((item, i) => (
@@ -143,7 +143,7 @@ const JobDetailView = ({ job }: { job: JobProps }) => {
             <div className='bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl p-6'>
               <h3 className='font-semibold text-gray-900 mb-4'>About WallX</h3>
               <p className='text-gray-600 text-sm leading-relaxed'>
-                We're a licensed MSB delivering secure, intuitive payment
+                We&apos;re a licensed MSB delivering secure, intuitive payment
                 infrastructure connecting North America to Africa through our
                 flagship product, FaasPay.
               </p>
@@ -155,8 +155,8 @@ const JobDetailView = ({ job }: { job: JobProps }) => {
                 Have questions?
               </h3>
               <p className='text-gray-600 text-sm leading-relaxed mb-4'>
-                Reach out to our team if you'd like to learn more about this
-                role or WallX.
+                Reach out to our team if you&apos;d like to learn more about
+                this role or WallX.
               </p>
               <a
                 href='mailto:careers@wallx.co'
@@ -200,11 +200,12 @@ export default function CareersPage({ params }: { params: { id: string } }) {
         {/* Footer CTA */}
         <div className='text-center p-8 bg-gradient-to-r from-purple-900 to-blue-900 rounded-3xl text-white'>
           <h3 className='text-2xl font-semibold mb-4'>
-            Don't see the perfect role?
+            Don&apos;t see the perfect role?
           </h3>
           <p className='text-purple-100 mb-6 max-w-2xl mx-auto'>
-            We're always looking for exceptional talent. Send us your resume and
-            tell us how you'd like to contribute to the future of fintech.
+            We&apos;re always looking for exceptional talent. Send us your
+            resume and tell us how you&apos;d like to contribute to the future
+            of fintech.
           </p>
           <a
             href='mailto:careers@wallx.co?subject=General Application - Future Opportunities'
