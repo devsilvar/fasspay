@@ -1,88 +1,66 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="w-screen overflow-hidden block space-y-10 md:space-y-0 md:flex items-center justify-between py-5 px-5 md:px-24">
-      <div className="space-y-5 md:space-y-10">
-        <h1 className="text-[#111111] text-2xl md:text-5xl font-bold leading-[30px] md:leading-[55px]">
-          Seamlessly send and receive
-          <br className="hidden md:block" /> money from your customers
-          <br className="hidden md:block" /> in less than 5-Minutes using
-          PayCodes.
+    <header className='w-full overflow-hidden py-12 px-6 md:px-24 flex flex-col md:flex-row items-center justify-between gap-12'>
+      {/* Left: Text + CTA */}
+      <div className='flex-1 space-y-6 text-center md:text-left'>
+        <h1 className='text-[#111111] text-3xl md:text-5xl font-bold leading-tight'>
+          Seamlessly send & receive money from your customers{' '}
+          <br className='hidden md:block' />
+          in less than 5 minutes using{' '}
+          <span className='text-[#473893]'>PayCodes</span>.
         </h1>
-        <p className="text-[#111111] text-[14px] md:text-3xl max-w-[626px]">
-          {`Experience hassle-free fund transfers for business and personal use - it's simple, secure, and no personal banking details needed!`}
+
+        <p className='text-gray-600 text-base md:text-xl leading-relaxed max-w-xl mx-auto md:mx-0'>
+          Experience hassle-free fund transfers for business and personal use —
+          it’s simple, secure, and no personal banking details needed.
         </p>
 
-        {/* <div className="flex gap-3 items-center">
-          <Image
-            src={"/appstore-logo.png"}
-            alt="logo"
-            width={223}
-            height={66}
-            // className="sm:w-5 sm:h-5 md:w-auto md:h-auto"
-          />
-          <Image
-            src={"/playstore-logo.png"}
-            alt="logo"
-            width={223}
-            height={66}
-            className="w-auto h-auto"
-          />
-        </div> */}
-        <div className="flex  sm:flex-row gap-4 sm:gap-6 items-center ">
+        <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center md:justify-start'>
           <a
-            href="https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075"
-            target="_blank"
-            className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+            href='https://apps.apple.com/us/app/fasepay-by-wallx/id6590625075'
+            target='_blank'
+            className='w-40 md:w-48 lg:w-56 transform hover:scale-105 transition duration-200'
+          >
             <Image
-              src="/appstore-logo.png"
-              alt="App Store"
+              src='/appstore-logo.png'
+              alt='Download on App Store'
               width={223}
               height={66}
-              layout="responsive"
-              className="object-contain"
+              layout='responsive'
+              className='object-contain'
             />
           </a>
           <a
-            href="https://play.google.com/store/apps/details?id=co.wallx.fasepay"
-            target="_blank"
-            className="w-36 sm:w-40 md:w-48 lg:w-56 h-auto">
+            href='https://play.google.com/store/apps/details?id=co.wallx.fasepay'
+            target='_blank'
+            className='w-40 md:w-48 lg:w-56 transform hover:scale-105 transition duration-200'
+          >
             <Image
-              src="/playstore-logo.png"
-              alt="Play Store"
+              src='/playstore-logo.png'
+              alt='Get it on Play Store'
               width={223}
               height={66}
-              layout="responsive"
-              className="object-contain"
+              layout='responsive'
+              className='object-contain'
             />
           </a>
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 relative">
+      {/* Right: Hero Image */}
+      <div className='flex-1 relative'>
         <Image
-          src={"/flags.png"}
-          alt="Flags"
+          src='/flags.png'
+          alt='Flags representing international money transfer'
           width={580}
           height={560}
-          layout="responsive"
-          objectFit="contain"
+          layout='responsive'
+          className='object-contain drop-shadow-lg'
         />
       </div>
-
-      {/* <div className="w-full md:w-1/2 relative">
-        <Image
-          src={"/flags.png"}
-          alt="Flags representing international money transfer"
-          layout="responsive"
-          width={100}
-          height={96}
-          objectFit="contain"
-        />
-      </div> */}
     </header>
   );
 }
