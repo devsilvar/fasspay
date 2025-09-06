@@ -3,12 +3,14 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import ContactModal from '../ContactModal';
+import Link from 'next/link';
 
 export default function NavBar() {
   const [showModal, setShowModal] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const router = useRouter();
   const navLinks = [
     { label: 'Home', href: '/' },
     // { label: 'About', href: '/about' },
@@ -40,13 +42,13 @@ export default function NavBar() {
         {/* Desktop Nav */}
         <div className='hidden md:flex gap-10 items-center text-white'>
           {navLinks.map((link) => (
-            <a
-              key={link.label}
+            <Link
               href={link.href}
+              key={link.label}
               className='hover:text-gray-200 transition-colors'
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <button
             onClick={() => setShowModal(true)}
