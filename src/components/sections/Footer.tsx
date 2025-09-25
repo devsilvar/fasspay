@@ -80,6 +80,12 @@ export default function Footer() {
               290 King Street E, Kitchener, ON N2G 2L3, Canada
             </p>
           </div>
+          <div className='flex items-start gap-2'>
+            <TiLocation size={20} className='text-[#473893] mt-1' />
+            <p className='font-medium text-[#333]'>
+              220 East 23rd St Manhattan NY 10010, United States
+            </p>
+          </div>
 
           <p className='font-medium text-[#333]'>Fax Only: +1 519-804-9236</p>
 
