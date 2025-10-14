@@ -1,5 +1,6 @@
+'use client';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import React from 'react';
 import { TiLocation } from 'react-icons/ti';
 
 interface Props {
@@ -25,11 +26,25 @@ const SocialIcon = ({ src, alt, href }: Props) => (
 );
 
 export default function Footer() {
+  const [showCookies, setShowCookies] = useState(true);
+
+  // Check if user has already made a choice
+  useEffect(() => {
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      setShowCookies(true);
+    }
+  }, []);
+
+  const handleConsent = (choice: 'accepted' | 'declined') => {
+    localStorage.setItem('cookieConsent', choice);
+    setShowCookies(false);
+  };
+
   return (
     <section className='w-full overflow-hidden'>
-      {/* Top Section: Logo + Download CTA */}
+      {/* --- Top Section --- */}
       <div className='w-full flex flex-col md:flex-row items-center justify-between gap-6 bg-white py-6 px-6 md:px-24'>
-        {/* Logo */}
         <Image
           src='/faaspay-logo.svg'
           alt='logo'
@@ -38,7 +53,6 @@ export default function Footer() {
           className='w-20 md:w-28 h-auto'
         />
 
-        {/* Quick Links (hidden on desktop for now, shown on mobile) */}
         <div className='flex md:hidden gap-6 text-sm font-medium text-gray-700'>
           <a href='#' className='hover:text-[#473893] transition'>
             Privacy Policy
@@ -51,7 +65,6 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Download CTA */}
         <a
           href='https://play.google.com/store/apps/details?id=co.wallx.fasepay'
           target='_blank'
@@ -62,9 +75,9 @@ export default function Footer() {
         </a>
       </div>
 
-      {/* Bottom Section */}
+      {/* --- Bottom Section --- */}
       <footer className='w-full bg-[#F4F2FF] px-6 md:px-24 py-10 md:py-16 flex flex-col md:flex-row gap-12 md:gap-24'>
-        {/* Left Column: Company Info */}
+        {/* Left Column */}
         <div className='flex-1 space-y-6 text-gray-600 text-sm md:text-base leading-relaxed'>
           <p>
             FaasPay by WallX is a WallX Innovation Inc. Company, duly registered
@@ -80,6 +93,7 @@ export default function Footer() {
               290 King Street E, Kitchener, ON N2G 2L3, Canada
             </p>
           </div>
+
           <div className='flex items-start gap-2'>
             <TiLocation size={20} className='text-[#473893] mt-1' />
             <p className='font-medium text-[#333]'>
@@ -128,6 +142,7 @@ export default function Footer() {
           <p className='text-sm text-gray-500'>
             © {new Date().getFullYear()} Faaspay by WallX Innovation Inc.
           </p>
+
           <div className='hidden md:flex gap-6 text-sm font-medium text-gray-700 mt-6'>
             <a href='#' className='hover:text-[#473893] transition'>
               Privacy Policy
@@ -141,7 +156,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right Column: Social Links */}
+        {/* Right Column */}
         <div className='flex md:flex-col items-center md:items-start gap-5 md:gap-6'>
           <SocialIcon
             href='https://x.com/faaspayng/status/1864629941775602075'
@@ -161,6 +176,47 @@ export default function Footer() {
           <SocialIcon href='' src='/linkedin-icon.png' alt='LinkedIn' />
         </div>
       </footer>
+
+      {/* --- Cookie Consent Banner --- */}
+      {showCookies && (
+        <div className='fixed bottom-0 left-0 w-full bg-[#00184A] text-white text-sm md:text-base px-6 md:px-16 py-4 md:py-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_-2px_10px_rgba(0,0,0,0.2)] z-50 animate-slideUp'>
+          <p className='max-w-3xl leading-relaxed text-center md:text-left text-gray-200'>
+            This site uses cookies and related technologies, as described in our{' '}
+            <a href='#' className='underline hover:text-blue-300'>
+              privacy policy
+            </a>
+            , for purposes that may include site operation, analytics, enhanced
+            user experience, or advertising. You may choose to consent to our
+            use of these technologies, or manage your own preferences. Please
+            visit our{' '}
+            <a href='#' className='underline hover:text-blue-300'>
+              cookie policy
+            </a>{' '}
+            for more information.
+          </p>
+
+          <div className='flex gap-2 shrink-0'>
+            <button
+              onClick={() => handleConsent('accepted')}
+              className='bg-[#007AFF] hover:bg-[#005FCC] transition text-white px-4 py-2 rounded-md font-medium'
+            >
+              AGREE & PROCEED
+            </button>
+            <button
+              onClick={() => handleConsent('declined')}
+              className='bg-transparent border border-gray-400 text-white px-4 py-2 rounded-md font-medium hover:bg-white/10 transition'
+            >
+              DECLINE ALL
+            </button>
+            <button
+              onClick={() => alert('Here you can add a real preferences modal')}
+              className='bg-white text-[#00184A] px-4 py-2 rounded-md font-medium hover:bg-gray-100 transition'
+            >
+              MANAGE CHOICES
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
