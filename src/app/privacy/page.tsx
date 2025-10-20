@@ -484,8 +484,9 @@ const Privacy = () => {
                           inaccurate information.
                         </li>
                         <li>
-                          <strong>Deletion:</strong> Request deletion ("Right to
-                          be Forgotten") where legally permissible.
+                          <strong>Deletion:</strong> Request deletion
+                          (&quot;Right to be Forgotten&quot;) where legally
+                          permissible.
                         </li>
                         <li>
                           <strong>Restriction:</strong> Limit how we process
@@ -538,7 +539,7 @@ const Privacy = () => {
                       <span className='bg-[#473893] text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold mr-3'>
                         11
                       </span>
-                      Children's Privacy
+                      Children&lsquo;s Privacy
                     </h2>
                     <div className='text-gray-700 leading-relaxed'>
                       <p>
