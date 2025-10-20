@@ -17,6 +17,8 @@ export default {
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
+  // Enable modern output for better performance
+  poweredByHeader: false,
   // Enable experimental features for better performance
   experimental: {
     // optimizeCss has been removed in Next.js 15 - CSS optimization is now automatic
