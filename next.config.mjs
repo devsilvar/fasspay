@@ -19,6 +19,6 @@ export default {
   },
   // Enable experimental features for better performance
   experimental: {
-    optimizeCss: true,
+    // optimizeCss has been removed in Next.js 15 - CSS optimization is now automatic
   },
 };
