@@ -1,15 +1,22 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Privacy = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
+    if (typeof window !== 'undefined') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setActiveSection(sectionId);
+      }
     }
   };
 
@@ -597,10 +604,10 @@ const Privacy = () => {
                       <p>
                         <strong>Email:</strong> or{' '}
                         <a
-                          href='mailto:provacy@faaspay.ca'
+                          href='mailto:privacy@faaspay.ca'
                           className='text-blue-600 hover:text-blue-800'
                         >
-                          provacy@faaspay.ca
+                          privacy@faaspay.ca
                         </a>{' '}
                       </p>
 
