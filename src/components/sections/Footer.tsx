@@ -145,9 +145,12 @@ export default function Footer() {
           </p>
 
           <div className='hidden md:flex gap-6 text-sm font-medium text-gray-700 mt-6'>
-            <Link href='/privacy' className='hover:text-[#473893] transition'>
+            <a
+              href='/privacy-policy'
+              className='hover:text-[#473893] transition'
+            >
               Privacy Policy
-            </Link>
+            </a>
             <a href='#' className='hover:text-[#473893] transition'>
               Terms
             </a>
