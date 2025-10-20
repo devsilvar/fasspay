@@ -159,7 +159,7 @@ const Privacy = () => {
                             documentation such as ID cards, utility bills,
                             business registration details, or tax identification
                             numbers. All verification data is externally managed
-                            through a truted 3rd party named "Veriff"
+                            through a truted 3rd party named &quot;Veriff&quot;
                           </li>
                           <li>
                             <strong>Business Profile Data:</strong> For
