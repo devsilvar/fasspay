@@ -21,6 +21,4 @@ export default {
   experimental: {
     optimizeCss: true,
   },
-  // Output configuration
-  output: 'standalone',
 };
