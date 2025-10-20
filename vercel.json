@@ -7,10 +7,10 @@
   "regions": ["iad1"],
   "functions": {
     "src/pages/api/**/*.js": {
-      "runtime": "@vercel/node"
+      "runtime": "@vercel/node@18.19.0"
     },
     "src/app/api/**/*.ts": {
-      "runtime": "@vercel/node"
+      "runtime": "@vercel/node@18.19.0"
     }
   }
 }
