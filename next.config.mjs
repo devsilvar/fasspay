@@ -13,4 +13,14 @@ export default {
     };
     return config;
   },
+  // Optimize for production
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  // Enable experimental features for better performance
+  experimental: {
+    optimizeCss: true,
+  },
+  // Output configuration
+  output: 'standalone',
 };
