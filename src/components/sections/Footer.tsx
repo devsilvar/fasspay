@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { TiLocation } from 'react-icons/ti';
+import Link from 'next/link';
 
 interface Props {
   src: string;
@@ -26,7 +27,7 @@ const SocialIcon = ({ src, alt, href }: Props) => (
 );
 
 export default function Footer() {
-  const [showCookies, setShowCookies] = useState(true);
+  const [showCookies, setShowCookies] = useState(false);
 
   // Check if user has already made a choice
   useEffect(() => {
@@ -144,9 +145,9 @@ export default function Footer() {
           </p>
 
           <div className='hidden md:flex gap-6 text-sm font-medium text-gray-700 mt-6'>
-            <a href='#' className='hover:text-[#473893] transition'>
+            <Link href='/privacy' className='hover:text-[#473893] transition'>
               Privacy Policy
-            </a>
+            </Link>
             <a href='#' className='hover:text-[#473893] transition'>
               Terms
             </a>
