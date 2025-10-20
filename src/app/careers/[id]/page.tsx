@@ -188,8 +188,9 @@ const JobDetailView = ({ job }: { job: JobProps }) => {
   );
 };
 
-export default function CareersPage({ params }: { params: { id: string } }) {
-  const job = jobs.find((j) => j.id === params.id);
+export default async function CareersPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const job = jobs.find((j) => j.id === id);
 
   if (!job) return <p>Job not found</p>;
 
