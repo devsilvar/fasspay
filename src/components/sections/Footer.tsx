@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import CookieConsent from '../../components/CookieConsent';
 import { TiLocation } from 'react-icons/ti';
 import Link from 'next/link';
 
@@ -183,43 +184,9 @@ export default function Footer() {
 
       {/* --- Cookie Consent Banner --- */}
       {showCookies && (
-        <div className='fixed bottom-0 left-0 w-full bg-[#00184A] text-white text-sm md:text-base px-6 md:px-16 py-4 md:py-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_-2px_10px_rgba(0,0,0,0.2)] z-50 animate-slideUp'>
-          <p className='max-w-3xl leading-relaxed text-center md:text-left text-gray-200'>
-            This site uses cookies and related technologies, as described in our{' '}
-            <a href='#' className='underline hover:text-blue-300'>
-              privacy policy
-            </a>
-            , for purposes that may include site operation, analytics, enhanced
-            user experience, or advertising. You may choose to consent to our
-            use of these technologies, or manage your own preferences. Please
-            visit our{' '}
-            <a href='#' className='underline hover:text-blue-300'>
-              cookie policy
-            </a>{' '}
-            for more information.
-          </p>
-
-          <div className='flex gap-2 shrink-0'>
-            <button
-              onClick={() => handleConsent('accepted')}
-              className='bg-[#007AFF] hover:bg-[#005FCC] transition text-white px-4 py-2 rounded-md font-medium'
-            >
-              AGREE & PROCEED
-            </button>
-            <button
-              onClick={() => handleConsent('declined')}
-              className='bg-transparent border border-gray-400 text-white px-4 py-2 rounded-md font-medium hover:bg-white/10 transition'
-            >
-              DECLINE ALL
-            </button>
-            <button
-              onClick={() => alert('Here you can add a real preferences modal')}
-              className='bg-white text-[#00184A] px-4 py-2 rounded-md font-medium hover:bg-gray-100 transition'
-            >
-              MANAGE CHOICES
-            </button>
-          </div>
-        </div>
+        <>
+          <CookieConsent />
+        </>
       )}
     </section>
   );
